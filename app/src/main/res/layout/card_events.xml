@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="5sp"
+        app:cardElevation="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/merriweather_italic"
+                android:gravity="end|center"
+                android:padding="10sp"
+                android:text="date"
+                android:textColor="@color/colorOrange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/merriweather_black"
+                android:gravity="start|center"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                android:text="title"
+                android:textColor="@color/colorBlue"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@color/colorOrange" />
+
+            <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_italic"
+            android:gravity="start|center"
+            android:padding="10sp"
+            android:text="description"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/tvAddToCalendar"
+                    android:layout_width="0sp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_italic"
+                    android:gravity="center"
+                    android:background="@color/colorOrange"
+                    android:padding="10sp"
+                    android:layout_margin="10sp"
+                    android:text="Add To Calender"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvShare"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/merriweather_italic"
+                    android:gravity="center"
+                    android:background="@color/colorOrange"
+                    android:padding="10sp"
+                    android:layout_margin="10sp"
+                    android:text="SHARE"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

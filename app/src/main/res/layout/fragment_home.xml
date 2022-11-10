@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="400sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5sp"
+                        android:background="@color/colorOrange"
+                        tools:ignore="SmallSp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:layout_weight="1.8"
+                        android:contentDescription="coverPhotos"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dbc_m1"
+                        tools:ignore="HardcodedText,NestedWeights" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:background="@color/colorOrange"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:paddingLeft="15sp"
+                                android:paddingTop="10sp"
+                                android:paddingRight="10sp"
+                                android:paddingBottom="10sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_announcements2" />
+
+                            <TextView
+                                android:id="@+id/announcements"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:background="@color/colorOrange"
+                                android:fontFamily="@font/merriweather_black"
+                                android:gravity="center|start"
+                                android:text="ANNOUNCEMENTS"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_button"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:padding="15sp"
+                                android:src="@drawable/ic_about1" />
+
+                            <TextView
+                                android:id="@+id/aboutUs"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:background="@color/colorWhite"
+                                android:fontFamily="@font/merriweather_black"
+                                android:gravity="start|center"
+                                android:text="ABOUT US"
+                                android:textColor="@color/colorBlue"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText,NestedWeights,RtlSymmetry" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:background="@color/colorBlue"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:padding="15sp"
+                                android:src="@drawable/ic_upcoming_events" />
+
+                            <TextView
+                                android:id="@+id/upcomingEvents"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:background="@color/colorBlue"
+                                android:fontFamily="@font/merriweather_bold"
+                                android:gravity="center|start"
+                                android:text="UPCOMING\nEVENTS"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText,RtlSymmetry" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        tools:ignore="NestedWeights">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorBlue"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:padding="15sp"
+                                        android:src="@drawable/ic_departments2" />
+
+                                    <TextView
+                                        android:id="@+id/departments"
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.5"
+                                        android:background="@color/colorBlue"
+                                        android:fontFamily="@font/merriweather_bold"
+                                        android:gravity="center|start"
+                                        android:text="DEPARTMENTS"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="15sp"
+                                        tools:ignore="HardcodedText,RtlSymmetry" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorWhite"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:padding="10sp"
+                                        android:src="@drawable/ic_acadamic2" />
+
+                                    <TextView
+                                        android:id="@+id/academic"
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.5"
+                                        android:background="@color/colorWhite"
+                                        android:fontFamily="@font/merriweather_bold"
+                                        android:gravity="center|start"
+                                        android:text="ACADEMICS"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0sp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorBlue"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <ImageView
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:padding="15sp"
+                                        android:src="@drawable/ic_magazine" />
+
+                                    <TextView
+                                        android:id="@+id/magazine"
+                                        android:layout_width="0sp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.5"
+                                        android:background="@color/colorBlue"
+                                        android:fontFamily="@font/merriweather_bold"
+                                        android:gravity="center|start"
+                                        android:text="MAGAZINES"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="15sp"
+                                        tools:ignore="HardcodedText,RtlSymmetry" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="1"
+                            android:background="@color/colorOrange"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:padding="15sp"
+                                android:src="@drawable/ic_login" />
+
+                            <TextView
+                                android:id="@+id/portalLogin"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:background="@color/colorOrange"
+                                android:fontFamily="@font/merriweather_bold"
+                                android:gravity="center|start"
+                                android:text="LOGIN"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:ignore="HardcodedText,RtlSymmetry" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0sp"
+                            android:layout_weight="2"
+                            tools:ignore="NestedWeights,UselessParent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorWhite"
+                                android:padding="15sp"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <com.github.demono.AutoScrollViewPager
+                                android:id="@+id/vpNews"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:defaultFocusHighlightEnabled="true"
+                                android:nestedScrollingEnabled="true"
+                                tools:ignore="ObsoleteLayoutParam,UnusedAttribute" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/merriweather_bold"
+                                android:gravity="center|top"
+                                android:text="NEWS"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText,RtlSymmetry" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3sp"
+                android:background="@color/colorOrange" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250sp">
+
+                <FrameLayout
+                    android:id="@+id/youtube_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
